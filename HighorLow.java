@@ -11,11 +11,10 @@ public class HighOrLow {
   while(s.equals(m)){ 
    s = card(); 
    } 
-  System.out.println("現在のカードは" + s + "です。"); 
-  cardmark(s); 
+  System.out.println("現在のカードは" + s + "です。");  
   System.out.print("Highr or Low ? :"); 
   judg(s,m,sc.next()); 
-  System.out.println("お疲れ様でした。"); 
+  System.out.println("マジまんじ。"); 
   System.exit(0); 
 
  } 
@@ -28,11 +27,11 @@ public class HighOrLow {
    i++; 
   } 
   if((s1c < s2c) && (ans.equals("h") || ans.equals("H"))){ 
-   System.out.println("おめでとうございます。あなたのカードは"+ s2 + "でした。"); 
+   System.out.println("お疲れ様です。あなたのカードは"+ s2 + "でした。"); 
   }else if((s1c > s2c) && (ans.equals("l")|| ans.equals("L"))){ 
    System.out.println("おめでとうございます。あなたのカードは"+ s2 + "でした。"); 
   }else{ 
-   System.out.println("残念。あなたのカードは"+ s2 + "でした。"); 
+   System.out.println("残念でした。あなたのカードは"+ s2 + "でした。"); 
   }  
   System.out.println(""); 
  }
