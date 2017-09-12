@@ -36,5 +36,9 @@ public class HighOrLow {
   }  
   System.out.println(""); 
  }
+  public static String card(){ 
+  Random ra = new Random(); 
+  return cmark[ra.nextInt(cmark.length-1)]; 
+ } 
 
  } 
