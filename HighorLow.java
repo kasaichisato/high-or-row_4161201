@@ -19,5 +19,22 @@ public class HighOrLow {
   System.exit(0); 
 
  } 
+  public static void judg(String s1,String s2,String ans){ 
+  int i = 0; 
+  int s1c = 0,s2c = 0; 
+  while(i < cmark.length){ 
+   if(cmark[i].equals(s1)) s1c = i; 
+   if(cmark[i].equals(s2)) s2c = i; 
+   i++; 
+  } 
+  if((s1c < s2c) && (ans.equals("h") || ans.equals("H"))){ 
+   System.out.println("おめでとうございます。あなたのカードは"+ s2 + "でした。"); 
+  }else if((s1c > s2c) && (ans.equals("l")|| ans.equals("L"))){ 
+   System.out.println("おめでとうございます。あなたのカードは"+ s2 + "でした。"); 
+  }else{ 
+   System.out.println("残念。あなたのカードは"+ s2 + "でした。"); 
+  }  
+  System.out.println(""); 
+ }
 
  } 
